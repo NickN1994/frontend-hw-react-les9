@@ -1,0 +1,73 @@
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.number {
+    font-size: 1.5em;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: center;
+    border: dashed green;
+
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 40px 0 40px;
+    align-items: center;
+    border: dashed red;
+}
+
+.inner-container h1 {
+    text-align: left;
+}
+
+.overzicht {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    border: dashed blue;
+    flex-shrink: 1;
+
+
+}
+
+
+
+.soldTV, .inStock, .salesToMake {
+    text-align: center;
+    border: dotted purple;
+
+}
+
+.soldTV, .inStock, .salesToMake h3 {
+    padding: 20px 0;
+
+}
+
+.soldTV, .inStock, .salesToMake p {
+    padding: 20px 0;
+
+}
+
+.bestSoldTV {
+    width: 1200px;
+}
