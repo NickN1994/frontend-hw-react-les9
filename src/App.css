@@ -46,11 +46,7 @@ h3 {
     gap: 20px;
     border: dashed blue;
     flex-shrink: 1;
-
-
 }
-
-
 
 .soldTV, .inStock, .salesToMake {
     text-align: center;
