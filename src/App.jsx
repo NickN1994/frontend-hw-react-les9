@@ -10,9 +10,10 @@ function App() {
             <div className='outer-container'>
                 <div className='inner-container'>
                     <h1>Tech it easy dashbord</h1>
-                    <section>
+                    <section className='saleInfo'>
                         <h2>Verkoopoverzicht</h2>
                         <div className='overzicht'>
+
                             <div className='soldTV'>
                                 <h3>Aantal verkochte producten</h3>
                                 <p className='number'>{soldTV(inventory)}</p>
@@ -37,6 +38,8 @@ function App() {
                 <div className='inner-container'>
                     <h2>Best verkochte TV</h2>
                     <section className='bestSoldTV'>
+                        {/*<img src="" alt=""/>*/}
+                        {/*<p>dit is even een voorbeeld</p>*/}
 
                     </section>
 
