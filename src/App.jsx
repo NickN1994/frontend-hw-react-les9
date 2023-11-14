@@ -7,8 +7,8 @@ import bestSoldTv from "./helpers/bestSoldTv.js";
 import priceBestSellingTv from "./helpers/priceBestSellingTv.js";
 import priceTv from "./helpers/priceBestSellingTv.js";
 import screenSize from "./helpers/screenSize.js";
-import minus from './assets/minus.png';
-import check from './assets/check.png';
+import minus from './assets/minus.png'
+import check from './assets/check.png'
 
 
 
@@ -62,14 +62,11 @@ function App() {
                                 <li><img src={check} alt="icon" className='checkicon'/> bluetooth</li>
                                 <li><img src={minus} alt="icon" className='checkicon'/> ambilight</li>
                             </ul>
-
-
                         </section>
                     </div>
 
                 </div>
             </div>
-
 
         </main>
     )

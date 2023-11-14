@@ -23,7 +23,7 @@ h3 {
     flex-grow: 0;
     flex-shrink: 1;
     justify-content: center;
-    border: dashed green;
+
 
 }
 
@@ -36,17 +36,15 @@ h3 {
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 40px 0 40px;
-    border: dashed red;
+
 }
 
 .overzicht {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
-    /*align-items: center;*/
+    justify-content: space-between;
     gap: 20px;
-    border: dashed blue;
     flex-shrink: 1;
     flex-grow: 0;
     text-align: center;
@@ -89,6 +87,7 @@ h3 {
     flex-direction: row;
     height: 350px;
     justify-content: space-around;
+    
     align-items: center;
     border: dashed 2px black;
     background: rgb(175, 175, 172, 0.5);
