@@ -7,6 +7,9 @@ import bestSoldTv from "./helpers/bestSoldTv.js";
 import priceBestSellingTv from "./helpers/priceBestSellingTv.js";
 import priceTv from "./helpers/priceBestSellingTv.js";
 import screenSize from "./helpers/screenSize.js";
+import minus from './assets/minus.png';
+import check from './assets/check.png';
+
 
 
 function App() {
@@ -42,14 +45,27 @@ function App() {
 
                 <div className='inner-container'>
                     <h2>Best verkochte TV</h2>
-                    <section className='bestSoldTV'>
-                        <p>{bestSoldTv(inventory)}</p>
-                        <p>{priceTv(inventory)}</p>
-                        <p>{screenSize(inventory)}</p>
+                    <div className='bestSoldTVbox'>
+                        <div className='bestSoldTvImgBox'>
+                            <img src={bestSellingTv.sourceImg} alt="Afbeelding Best Sold Tv" className='bestSoldTVImg'/>
+                        </div>
 
 
+                        <section className='bestSoldTV'>
+                            <p>{bestSoldTv(inventory)}</p>
+                            <p>{priceTv(inventory)}</p>
+                            <p>{screenSize(bestSellingTv.availableSizes)}</p>
+                            <ul className='options'>
+                                <li><img src={check} alt="icon" className='checkicon'/> wifi</li>
+                                <li><img src={minus} alt="icon" className='checkicon'/> speech</li>
+                                <li><img src={check} alt="icon" className='checkicon'/> hdr</li>
+                                <li><img src={check} alt="icon" className='checkicon'/> bluetooth</li>
+                                <li><img src={minus} alt="icon" className='checkicon'/> ambilight</li>
+                            </ul>
 
-                    </section>
+
+                        </section>
+                    </div>
 
                 </div>
             </div>

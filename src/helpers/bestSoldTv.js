@@ -1,6 +1,7 @@
+import {bestSellingTv} from "../constants/inventory.js";
 
 
-function bestSoldTv(bestSellingTv) {
+function bestSoldTv() {
     return bestSellingTv.brand + " " + bestSellingTv.type + " - " + bestSellingTv.name;
 }
 

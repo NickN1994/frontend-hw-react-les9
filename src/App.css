@@ -84,12 +84,42 @@ h3 {
     border-radius: 5px;
 }
 
-
-.bestSoldTV {
+.bestSoldTVbox {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    border: dashed 2px black;
+    background: rgb(175, 175, 172, 0.5);
+    border-radius: 5px;
+}
+
+.bestSoldTVImgBox {
+    max-width: 100px;
+}
+
+.bestSoldTVImg {
     width: 100%;
-    border: dashed 1px black;
-    background: grey;
+}
+
+/*.bestSoldTV {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+
+/*}*/
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+
+}
+
+.checkicon, .minusicon {
+    width: 15px;
 }
