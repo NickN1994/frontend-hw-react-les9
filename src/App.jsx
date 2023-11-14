@@ -1,8 +1,13 @@
 import './App.css';
 import soldTV from "./helpers/soldTv.js";
-import {inventory} from "./constants/inventory.js";
+import {bestSellingTv, inventory} from "./constants/inventory.js";
 import inStockTv from "./helpers/inStockTv.js";
 import salesToMake from "./helpers/salesToMake.js";
+import bestSoldTv from "./helpers/bestSoldTv.js";
+import priceBestSellingTv from "./helpers/priceBestSellingTv.js";
+import priceTv from "./helpers/priceBestSellingTv.js";
+import screenSize from "./helpers/screenSize.js";
+
 
 function App() {
     return (
@@ -38,8 +43,11 @@ function App() {
                 <div className='inner-container'>
                     <h2>Best verkochte TV</h2>
                     <section className='bestSoldTV'>
-                        {/*<img src="" alt=""/>*/}
-                        {/*<p>dit is even een voorbeeld</p>*/}
+                        <p>{bestSoldTv(inventory)}</p>
+                        <p>{priceTv(inventory)}</p>
+                        <p>{screenSize(inventory)}</p>
+
+
 
                     </section>
 

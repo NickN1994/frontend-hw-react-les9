@@ -9,6 +9,8 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    text-align: center;
+    width: 80%;
 }
 
 .number {
@@ -30,7 +32,7 @@ h3 {
     flex-direction: column;
     flex-basis: 1400px;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 40px 0 40px;
@@ -42,8 +44,8 @@ h3 {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    align-items: center;
-    gap: 40px;
+    /*align-items: center;*/
+    gap: 20px;
     border: dashed blue;
     flex-shrink: 1;
     flex-grow: 0;
@@ -52,20 +54,34 @@ h3 {
 
 
 .soldTV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 110, 11);
     border: solid 2px rgb(0, 110, 11);
-    background: rgb(0, 110, 11, 0.2);
+    background: rgb(0, 110, 11, 0.1);
+    border-radius: 5px;
 }
 
 .inStock {
-    border: solid 2px rgb(0, 110, 11);
-    background: rgb(0, 110, 11, 0.2);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(77, 111, 160);
+    border: solid 2px rgb(77, 111, 160);
+    background: rgb(77, 111, 160, 0.1);
+    border-radius: 5px;
 }
 
 .salesToMake {
-    border: solid 2px rgb(0, 110, 11);
-    background: rgb(0, 110, 11, 0.2);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(238, 90, 20);
+    border: solid 2px rgb(238, 90, 20);
+    background: rgb(238, 90, 20, 0.1);
+    border-radius: 5px;
 }
 
 
