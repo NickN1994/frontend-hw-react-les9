@@ -95,7 +95,7 @@ h3 {
 }
 
 .bestSoldTVImgBox {
-    max-width: 100px;
+    max-width: 50px;
 }
 
 .bestSoldTVImg {
@@ -116,9 +116,14 @@ h3 {
     justify-content: space-between;
     align-items: flex-start;
     list-style: none;
+    flex-shrink: 1;
 
 }
 
 .checkicon, .minusicon {
     width: 15px;
+}
+
+.buttonTwo {
+    margin: 0 20px;
 }

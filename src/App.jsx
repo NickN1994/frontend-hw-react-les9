@@ -11,7 +11,6 @@ import minus from './assets/minus.png'
 import check from './assets/check.png'
 
 
-
 function App() {
     return (
         <main>
@@ -50,7 +49,6 @@ function App() {
                             <img src={bestSellingTv.sourceImg} alt="Afbeelding Best Sold Tv" className='bestSoldTVImg'/>
                         </div>
 
-
                         <section className='bestSoldTV'>
                             <p>{bestSoldTv(inventory)}</p>
                             <p>{priceTv(inventory)}</p>
@@ -67,6 +65,24 @@ function App() {
 
                 </div>
             </div>
+
+            <div className='outer-container'>
+                <div className='inner-container'>
+                    <h2>Alle tv's</h2>
+                    <div className='buttons'>
+                        <button type='button'>Meest verkocht</button>
+                        <button type='button' className='buttonTwo'>Goedkoopste eerst</button>
+                        <button type='button'>Meest geschikt voor sport eerst</button>
+                    </div>
+
+                    {/*<div>{allTv(inventory)}</div>*/}
+
+
+                    {/*    hieronder inner-container close*/}
+                </div>
+                {/*    hieronder de outercontainer close*/}
+            </div>
+
 
         </main>
     )

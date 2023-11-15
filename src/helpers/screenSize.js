@@ -12,4 +12,6 @@ function screenSize(arrayScreenSizes) {
 
 }
 
+
+
 export default screenSize;

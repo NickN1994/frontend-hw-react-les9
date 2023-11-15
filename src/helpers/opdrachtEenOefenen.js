@@ -65,3 +65,11 @@
 // console.log(options);
 
 // opdracht 2d
+// const options = inventory.map((option) => {
+//     if (option.options === true) {
+//
+//     }
+//     return option.options
+//
+// })
+// console.log(options);
