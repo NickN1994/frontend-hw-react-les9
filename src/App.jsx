@@ -4,14 +4,13 @@ import {bestSellingTv, inventory} from "./constants/inventory.js";
 import inStockTv from "./helpers/inStockTv.js";
 import salesToMake from "./helpers/salesToMake.js";
 import bestSoldTv from "./helpers/bestSoldTv.js";
-import priceBestSellingTv from "./helpers/priceBestSellingTv.js";
 import priceTv from "./helpers/priceBestSellingTv.js";
 import screenSize from "./helpers/screenSize.js";
 import minus from './assets/minus.png'
 import check from './assets/check.png'
-import allTv from "./helpers/allTv.js";
 import tvName from "./helpers/tvName.js";
 import tvPrice from "./helpers/tvPrice.js";
+import screensizeTvs from "./helpers/screensizeTvs.js";
 
 
 function App() {
@@ -87,7 +86,18 @@ function App() {
                             <div className=tv-info>
                                 <h3>{tvName(tv)}</h3>
                                 <p>{tvPrice(tvPrice)}</p>
-                                <p>{}</p>
+                                <p>{screensizeTvs(tv.availableSizes)}</p>
+                                <ul>
+                                    {tv.options.map((option) => {
+                                        if (option.applicable === true) {
+                                            return <li><img src={check} alt="icon" className='checkicon'/>{option.name}
+                                            </li>
+                                        } else {
+                                            return <li><img src={minus} alt="icon" className='checkicon'/>{option.name}
+                                            </li>
+                                        }
+                                    })}
+                                </ul>
 
                             </div>
 
