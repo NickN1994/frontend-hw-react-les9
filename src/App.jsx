@@ -9,6 +9,7 @@ import priceTv from "./helpers/priceBestSellingTv.js";
 import screenSize from "./helpers/screenSize.js";
 import minus from './assets/minus.png'
 import check from './assets/check.png'
+import allTv from "./helpers/allTv.js";
 
 
 function App() {
@@ -75,7 +76,7 @@ function App() {
                         <button type='button'>Meest geschikt voor sport eerst</button>
                     </div>
 
-                    {/*<div>{allTv(inventory)}</div>*/}
+                    {allTv(inventory)}
 
 
                     {/*    hieronder inner-container close*/}

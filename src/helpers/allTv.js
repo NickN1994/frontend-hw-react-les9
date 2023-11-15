@@ -5,8 +5,9 @@ import screenSize from "./screenSize.js";
 import check from "../assets/check.png";
 import minus from "../assets/minus.png";
 import screenSizeAllTv from "./screenSizeAllTv.js";
+import tvOptions from "./options.js";
 
-inventory
+
 
 function allTv () {
     let allTvs = inventory.map((tv) => {
@@ -16,18 +17,21 @@ function allTv () {
             </div>
 
             <section className='bestSoldTV'>
-                <p>{tv.brand + ' ' + tv.type + ' ' + tv.name}</p>
-                <p>{'€' + tv.price + ',-'}</p>
-                <p>{screenSizeAllTv(inventory)}</p>
+                <p>{tv.brand} {tv.type} {tv.name}</p>
+                <p>€{tv.price},-</p>
+                <p>{screenSizeAllTv(tv.availableSizes)}</p>
                 <ul className='options'>
-                    <li><img src={check} alt="icon" className='checkicon'/> wifi</li>
-                    <li><img src={minus} alt="icon" className='checkicon'/> speech</li>
-                    <li><img src={check} alt="icon" className='checkicon'/> hdr</li>
-                    <li><img src={check} alt="icon" className='checkicon'/> bluetooth</li>
-                    <li><img src={minus} alt="icon" className='checkicon'/> ambilight</li>
+                    <li>{tvOptions(tv.options)} wifi</li>
+                    <li>{tvOptions(tv.options)} speech</li>
+                    <li>{tvOptions(tv.options)} hdr</li>
+                    <li>{tvOptions(tv.options)} bluetooth</li>
+                    <li>{tvOptions(tv.options)} ambilight</li>
                 </ul>
             </section>
         </div>
-    })
 
+    })
+    return allTvs
 }
+
+export default allTv;

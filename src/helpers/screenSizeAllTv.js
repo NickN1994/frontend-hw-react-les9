@@ -1,15 +1,13 @@
-import {inventory} from "../constants/inventory.js";
 
-
-function screenSizeAllTv (arrayScreenSizes) {
+function screenSizeAllTv(arrayScreenSizes) {
     let outcome = '';
-    for (let i = 0; i < inventory.length; i++) {
-        for (let j = 0; j < inventory.availableSizes.length; j++) {
-            outcome = outcome + inventory.availableSizes[j] + " inch " + (inventory.availableSizes[j] * 2.54) + " cm | ";
-        }
+
+    for (let i = 0; i < arrayScreenSizes.length; j++) {
+        outcome = outcome + arrayScreenSizes[i] + " inch " + (arrayScreenSizes[i] * 2.54) + " cm | ";
     }
+
     return outcome;
 
 }
 
-export default screenSizeAllTv;
+export default screenSizeAllTv
