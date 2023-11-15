@@ -10,6 +10,8 @@ import screenSize from "./helpers/screenSize.js";
 import minus from './assets/minus.png'
 import check from './assets/check.png'
 import allTv from "./helpers/allTv.js";
+import tvName from "./helpers/tvName.js";
+import tvPrice from "./helpers/tvPrice.js";
 
 
 function App() {
@@ -76,8 +78,21 @@ function App() {
                         <button type='button'>Meest geschikt voor sport eerst</button>
                     </div>
 
-                    {allTv(inventory)}
+                    {inventory.map((tv) => {
+                        return <article>
+                            <span>
+                                <img src={tv.sourceImg} alt="afbeelding van tv"/>
+                            </span>
 
+                            <div className=tv-info>
+                                <h3>{tvName(tv)}</h3>
+                                <p>{tvPrice(tvPrice)}</p>
+                                <p>{}</p>
+
+                            </div>
+
+                        </article>
+                    })}
 
                     {/*    hieronder inner-container close*/}
                 </div>
