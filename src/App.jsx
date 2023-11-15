@@ -9,7 +9,8 @@ import priceTv from "./helpers/priceBestSellingTv.js";
 import screenSize from "./helpers/screenSize.js";
 import minus from './assets/minus.png'
 import check from './assets/check.png'
-import allTv from "./helpers/allTv.js";
+import allTv from "./helpers/allTv.jsx";
+import allTvs from "./helpers/allTv.jsx";
 
 
 function App() {

@@ -10,7 +10,9 @@ import tvOptions from "./options.js";
 
 
 function allTv () {
+
     let allTvs = inventory.map((tv) => {
+
         return <div className='bestSoldTVbox'>
             <div className='bestSoldTvImgBox'>
                 <img src={tv.sourceImg} alt="Afbeelding Tv" className='bestSoldTVImg'/>
