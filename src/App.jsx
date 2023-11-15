@@ -80,9 +80,9 @@ function App() {
                     {allTv(inventory)}
 
 
-                    {/*    hieronder inner-container close*/}
+                    {/*hieronder inner-container close*/}
                 </div>
-                {/*    hieronder de outercontainer close*/}
+                {/*hieronder de outercontainer close*/}
             </div>
 
 

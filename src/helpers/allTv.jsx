@@ -1,9 +1,4 @@
 import {bestSellingTv, inventory} from "../constants/inventory.js";
-import bestSoldTv from "./bestSoldTv.js";
-import priceTv from "./priceBestSellingTv.js";
-import screenSize from "./screenSize.js";
-import check from "../assets/check.png";
-import minus from "../assets/minus.png";
 import screenSizeAllTv from "./screenSizeAllTv.js";
 import tvOptions from "./options.js";
 
@@ -23,11 +18,7 @@ function allTv () {
                 <p>€{tv.price},-</p>
                 <p>{screenSizeAllTv(tv.availableSizes)}</p>
                 <ul className='options'>
-                    <li>{tvOptions(tv.options)} wifi</li>
-                    <li>{tvOptions(tv.options)} speech</li>
-                    <li>{tvOptions(tv.options)} hdr</li>
-                    <li>{tvOptions(tv.options)} bluetooth</li>
-                    <li>{tvOptions(tv.options)} ambilight</li>
+                    {tvOptions(tv.options)}
                 </ul>
             </section>
         </div>

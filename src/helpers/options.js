@@ -2,11 +2,17 @@ import check from "../assets/check.png";
 import minus from "../assets/minus.png";
 
 function tvOptions (options) {
-    if (options === true) {
-        return <img src={check} alt="icon" className='checkicon'/>
-    } else {
-        return <img src={minus} alt="icon" className='checkicon'/>
-    }
+    options.map((option) => {
+        if (option.applicable === true) {
+            return <li><img src={check} alt="icon" className='checkicon'/>{option.name}
+            </li>
+        } else {
+            return <li><img src={minus} alt="icon" className='checkicon'/>{option.name}
+            </li>
+        }
+    })
+    return options
+
 
 }
 
