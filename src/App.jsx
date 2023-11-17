@@ -52,7 +52,7 @@ function App() {
                         </div>
 
                         <section className='bestSoldTV'>
-                            <p>{bestSoldTv(inventory)}</p>
+                            <h3>{bestSoldTv(inventory)}</h3>
                             <p>{priceTv(inventory)}</p>
                             <p>{screenSize(bestSellingTv.availableSizes)}</p>
                             <ul className='options'>
