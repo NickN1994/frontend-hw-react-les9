@@ -13,9 +13,9 @@ function allTv () {
                 <img src={tv.sourceImg} alt="Afbeelding Tv" className='tvIMG'/>
             </div>
 
-            <section className='bestSoldTV'>
+            <section className='tvInfo'>
                 <h3>{tv.brand} {tv.type} {tv.name}</h3>
-                <p>€{tv.price},-</p>
+                <p className='price'>€{tv.price},-</p>
                 <p>{screenSizeAllTv(tv.availableSizes)}</p>
                 <ul className='options'>
                     {tvOptions(tv.options)}

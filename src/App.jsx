@@ -46,14 +46,14 @@ function App() {
 
                 <div className='inner-container'>
                     <h2>Best verkochte TV</h2>
-                    <div className='bestSoldTVbox'>
-                        <div className='bestSoldTvImgBox'>
-                            <img src={bestSellingTv.sourceImg} alt="Afbeelding Best Sold Tv" className='bestSoldTVImg'/>
+                    <div className='tvbox-best'>
+                        <div className='tvboximg'>
+                            <img src={bestSellingTv.sourceImg} alt="Afbeelding Best Sold Tv" className='tvIMG'/>
                         </div>
 
-                        <section className='bestSoldTV'>
+                        <section className='tvInfo'>
                             <h3>{bestSoldTv(inventory)}</h3>
-                            <p>{priceTv(inventory)}</p>
+                            <p className='price'>{priceTv(inventory)}</p>
                             <p>{screenSize(bestSellingTv.availableSizes)}</p>
                             <ul className='options'>
                                 <li><img src={check} alt="icon" className='checkicon'/> wifi</li>

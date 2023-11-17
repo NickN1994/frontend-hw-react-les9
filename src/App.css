@@ -8,9 +8,13 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     width: 80%;
+}
+
+.price {
+    font-size: 20px;
 }
 
 .number {
@@ -82,34 +86,18 @@ h3 {
     border-radius: 5px;
 }
 
-.bestSoldTVbox {
+.tvbox-best {
     display: flex;
     flex-direction: row;
     height: 350px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 50px;
+    padding: 0 250px;
     border: dashed 2px black;
     background: rgb(175, 175, 172, 0.5);
     border-radius: 5px;
 }
-
-.bestSoldTVImgBox {
-    max-width: 100px;
-}
-
-.bestSoldTVImg {
-    width: 100%;
-}
-
-.bestSoldTv {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border: 3px solid red;
-}
-
-
 
 .tvbox {
     display: flex;
@@ -117,10 +105,8 @@ h3 {
     height: 350px;
     justify-content: space-between;
     align-items: center;
-    gap: 32px
-    /*border: dashed 2px black;*/
-    /*background: rgb(175, 175, 172, 0.5);*/
-    /*border-radius: 5px;*/
+    gap: 50px;
+    padding: 0 250px;
 }
 
 .tvboximg {
@@ -131,15 +117,13 @@ h3 {
     width: 100%;
 }
 
-
-
-/*.bestSoldTV {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    width: 100%;*/
-
-/*}*/
+.tvInfo {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: left;
+    border: 1px solid red;
+}
 
 .options{
     display: flex;
