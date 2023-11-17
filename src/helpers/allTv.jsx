@@ -1,6 +1,6 @@
 import {bestSellingTv, inventory} from "../constants/inventory.js";
 import screenSizeAllTv from "./screenSizeAllTv.js";
-import tvOptions from "./options.js";
+import tvOptions from "./options.jsx";
 
 
 
