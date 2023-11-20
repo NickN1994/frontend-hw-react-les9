@@ -1,8 +1,16 @@
 import './App.css';
 import soldTV from "./helpers/soldTv.js";
-import {inventory} from "./constants/inventory.js";
+import {bestSellingTv, inventory} from "./constants/inventory.js";
 import inStockTv from "./helpers/inStockTv.js";
 import salesToMake from "./helpers/salesToMake.js";
+import bestSoldTv from "./helpers/bestSoldTv.js";
+import priceBestSellingTv from "./helpers/priceBestSellingTv.js";
+import priceTv from "./helpers/priceBestSellingTv.js";
+import screenSize from "./helpers/screenSize.js";
+import minus from './assets/minus.png'
+import check from './assets/check.png'
+import allTv from "./helpers/allTv.jsx";
+
 
 function App() {
     return (
@@ -10,9 +18,10 @@ function App() {
             <div className='outer-container'>
                 <div className='inner-container'>
                     <h1>Tech it easy dashbord</h1>
-                    <section>
+                    <section className='saleInfo'>
                         <h2>Verkoopoverzicht</h2>
                         <div className='overzicht'>
+
                             <div className='soldTV'>
                                 <h3>Aantal verkochte producten</h3>
                                 <p className='number'>{soldTV(inventory)}</p>
@@ -36,11 +45,63 @@ function App() {
 
                 <div className='inner-container'>
                     <h2>Best verkochte TV</h2>
-                    <section className='bestSoldTV'>
+                    <div className='tvbox-best'>
+                        <div className='tvboximg'>
+                            <img src={bestSellingTv.sourceImg} alt="Afbeelding Best Sold Tv" className='tvIMG'/>
+                        </div>
 
-                    </section>
+                        <section className='tvInfo'>
+                            <h3 className='productTitle'>{bestSoldTv(inventory)}</h3>
+                            <p className='price'>{priceTv(inventory)}</p>
+                            <p>{screenSize(bestSellingTv.availableSizes)}</p>
+                            <ul className='options'>
+                                <li><img src={check} alt="icon" className='checkicon'/> wifi</li>
+                                <li><img src={minus} alt="icon" className='checkicon'/> speech</li>
+                                <li><img src={check} alt="icon" className='checkicon'/> hdr</li>
+                                <li><img src={check} alt="icon" className='checkicon'/> bluetooth</li>
+                                <li><img src={minus} alt="icon" className='checkicon'/> ambilight</li>
+                            </ul>
+                        </section>
+                    </div>
 
                 </div>
+            </div>
+
+            <div className='outer-container'>
+                <div className='inner-container'>
+                    <h2>Alle tv's</h2>
+                    <div className='buttons'>
+                        <button type='button'>Meest verkocht</button>
+
+                        {/*function sortSales () {*/}
+                        {/*inventory.sort (    (a, b) => {*/}
+                        {/*    return a.sold - b.sold*/}
+
+                        {/*})*/}
+
+                        <button type='button' className='buttonTwo'>Goedkoopste eerst</button>
+                    {/*    function cheapestTv () {*/}
+                    {/*    inventory.sort((a, b) => {*/}
+                    {/*        return a.price - b.price*/}
+                    {/*    })*/}
+                    {/*}*/}
+
+
+                        <button type='button'>Meest geschikt voor sport eerst</button>
+                    {/*    function refreshRate () {*/}
+                    {/*    inventory.sort((a, b) => {*/}
+                    {/*        return a.refreshRate - b.refreshRate*/}
+                    {/*    })*/}
+                    {/*}*/}
+
+                    </div>
+
+                    {allTv(inventory)}
+
+
+                    {/*hieronder inner-container close*/}
+                </div>
+                {/*hieronder de outercontainer close*/}
             </div>
 
 

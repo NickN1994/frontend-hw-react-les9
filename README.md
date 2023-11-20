@@ -9,7 +9,7 @@ betekent dat de medewerkers een financieel dashboard nodig hebben om zelf de adm
 Omdat Fred al heel lang niets heeft uitgevoerd is het niet zo goed gesteld met de financieën. Je kunt er daarom vanuit
 gaan dat de voorraad met televisies op dit moment statisch is, maar in de toekomst dynamisch wordt.
 
-![Tech it easy](./src/assets/tech_it_easy.png)
+![Tech it easy](../untitled4/assets/tech_it_easy.png)
 
 In `constants/inventory.js` vind je 2 datasets. Eén object met de gegevens van de
 bestverkochte tv bij Tech It Easy en één array met 8 objecten (alle tv's die zij verkopen). Elk tv-object bevat de
@@ -35,7 +35,7 @@ Door de opdrachten te maken bouw je langzaam het eerste deel van het Tech It Eas
 styling van het voorbeeld over te nemen, of jouw eigen huisstijl te bedenken. Zorg er wel voor dat je eerst aan de slag
 gaat met de technische opdrachten voor je jouw tijd besteed aan styling.
 
-![screenshot deel 1](./src/assets/screenshots/tech-it-easy-dashboard-deel-1.png)
+![screenshot deel 1](../untitled4/screenshots/tech-it-easy-dashboard-deel-1.png)
 
 ### Opdracht 1 - Helperfuncties
 
@@ -86,7 +86,7 @@ heeft (`[43, 50, 55, 58]`) wordt de output `43 inch (109 cm) | 50 inch (127 cm) 
 * **Opdracht 2d:** Gebruik jouw helperfuncties om de informatie van de bestverkochte tv, inclusief afbeelding, op
   de pagina weer te geven:
 
-![screenshot weergave best verkochte tv](./src/assets/screenshots/tech-it-easy-best-seller.png)
+![screenshot weergave best verkochte tv](../untitled4/screenshots/tech-it-easy-best-seller.png)
 
 * **Opdracht 2e:** gebruik de iconen uit de `assets`-map om weer te geven welke toepassingen aanwezig zijn op deze tv.
   Doe dit voor nu nog even door de informatie zelf, handmatig
@@ -108,7 +108,7 @@ geven.
 Gebruik de `inventory`-array als input en houdt er rekening mee dat het niet uit moet maken of de array 8 of 800 tv's
 lang is.
 
-![screenshot deel 1](./src/assets/screenshots/tech-it-easy-dashboard-deel-2.png)
+![screenshot deel 1](../untitled4/screenshots/tech-it-easy-dashboard-deel-2.png)
 
 ### Opdracht 1 - Oefenen met array methodes
 

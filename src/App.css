@@ -1,5 +1,6 @@
 h1 {
     font-size: 3em;
+
 }
 
 h2 {
@@ -7,7 +8,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+
+}
+
+.price {
+    font-size: 20px;
 }
 
 .number {
@@ -20,7 +26,7 @@ h3 {
     flex-grow: 0;
     flex-shrink: 1;
     justify-content: center;
-    border: dashed green;
+
 
 }
 
@@ -28,46 +34,126 @@ h3 {
     display: flex;
     flex-direction: column;
     flex-basis: 1400px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 40px 0 40px;
-    align-items: center;
-    border: dashed red;
-}
 
-.inner-container h1 {
-    text-align: left;
 }
 
 .overzicht {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
     gap: 20px;
-    border: dashed blue;
+    flex-shrink: 1;
+    flex-grow: 0;
+    text-align: center;
+}
+
+
+.soldTV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 110, 11);
+    border: solid 2px rgb(0, 110, 11);
+    background: rgb(0, 110, 11, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.soldTV h3 {
+    width: 80%;
+}
+
+.inStock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(77, 111, 160);
+    border: solid 2px rgb(77, 111, 160);
+    background: rgb(77, 111, 160, 0.1);
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.inStock h3 {
+    width: 80%;
+}
+
+.salesToMake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(238, 90, 20);
+    border: solid 2px rgb(238, 90, 20);
+    background: rgb(238, 90, 20, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.salesToMake h3 {
+    width: 80%;
+}
+
+.tvbox-best {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0 250px;
+    border: dashed 2px black;
+    background: rgb(175, 175, 172, 0.5);
+    border-radius: 5px;
+}
+
+.tvbox {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    align-items: center;
+    gap: 50px;
+}
+
+.tvboximg {
+    width: 300px;
+}
+
+.tvIMG {
+    width: 100%;
+}
+
+.tvInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.productTitle {
+    padding-left: -70px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: space-between;
+    list-style: none;
     flex-shrink: 1;
 
-
 }
 
-
-
-.soldTV, .inStock, .salesToMake {
-    text-align: center;
-    border: dotted purple;
-
+.checkicon, .minusicon {
+    width: 15px;
+    padding-right: 5px;
 }
 
-.soldTV, .inStock, .salesToMake h3 {
-    padding: 20px 0;
-
-}
-
-.soldTV, .inStock, .salesToMake p {
-    padding: 20px 0;
-
-}
-
-.bestSoldTV {
-    width: 1200px;
+.buttonTwo {
+    margin: 0 20px;
 }
