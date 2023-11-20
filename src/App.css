@@ -123,7 +123,7 @@ h3 {
 }
 
 .tvboximg {
-    max-width: 300px;
+    width: 300px;
 }
 
 .tvIMG {
@@ -133,7 +133,6 @@ h3 {
 .tvInfo {
     display: flex;
     flex-direction: column;
-    width: 500px;
 }
 
 .productTitle {
@@ -145,7 +144,6 @@ h3 {
     flex-direction: row;
     gap: 6px;
     justify-content: space-between;
-    align-items: flex-start;
     list-style: none;
     flex-shrink: 1;
 
