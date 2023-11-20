@@ -10,7 +10,6 @@ import screenSize from "./helpers/screenSize.js";
 import minus from './assets/minus.png'
 import check from './assets/check.png'
 import allTv from "./helpers/allTv.jsx";
-import allTvs from "./helpers/allTv.jsx";
 
 
 function App() {
@@ -52,7 +51,7 @@ function App() {
                         </div>
 
                         <section className='tvInfo'>
-                            <h3>{bestSoldTv(inventory)}</h3>
+                            <h3 className='productTitle'>{bestSoldTv(inventory)}</h3>
                             <p className='price'>{priceTv(inventory)}</p>
                             <p>{screenSize(bestSellingTv.availableSizes)}</p>
                             <ul className='options'>
@@ -73,8 +72,28 @@ function App() {
                     <h2>Alle tv's</h2>
                     <div className='buttons'>
                         <button type='button'>Meest verkocht</button>
+
+                        {/*function sortSales () {*/}
+                        {/*inventory.sort (    (a, b) => {*/}
+                        {/*    return a.sold - b.sold*/}
+
+                        {/*})*/}
+
                         <button type='button' className='buttonTwo'>Goedkoopste eerst</button>
+                    {/*    function cheapestTv () {*/}
+                    {/*    inventory.sort((a, b) => {*/}
+                    {/*        return a.price - b.price*/}
+                    {/*    })*/}
+                    {/*}*/}
+
+
                         <button type='button'>Meest geschikt voor sport eerst</button>
+                    {/*    function refreshRate () {*/}
+                    {/*    inventory.sort((a, b) => {*/}
+                    {/*        return a.refreshRate - b.refreshRate*/}
+                    {/*    })*/}
+                    {/*}*/}
+
                     </div>
 
                     {allTv(inventory)}
